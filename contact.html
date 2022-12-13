@@ -1,12 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Code by Shubham Verma (studymuch.in) -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <style type="text/css">
+        * {
+         box-sizing: border-box;}
+         .form-field{background:linear-gradient(55deg, rgb(2, 90, 6), rgb(13, 1, 84)) ;}
+        .form-field{
+            margin: auto;
+            width: 100%;
+            padding: 15px;;
+            color: rgb(167, 23, 23);
+            box-shadow:0px 10px 30px black ;
+            border-bottom-left-radius: 20px;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+            .textarea-icon {
+            padding: 40px 5px !important;
+            }
+            .input-cnt:last-child {
+         margin-bottom: 0px;
+      }
+        .form-1{
+            display: flex;
+            margin-bottom: 15px;
+        }
+        .form-1 > input[type="text"], .form-1 > textarea,
+         .form-1 > input[type="email"] {
+        padding: 5px;
+        outline: none;
+        border: none;
+        border-bottom-right-radius: 20px;
+        border-top-right-radius: 20px;
+        min-width: 90%;
+        overflow: hidden;
+        }
+        .form-1 > i{
+            padding: 5px;
+            min-width: 40px;
+            text-align: center;
+            color: rgb(0, 126, 42);
+            background: rgb(252, 251, 249);
+            border-bottom-left-radius: 20px;
+            border-top-left-radius: 20px;
+        }
+        .form-1 > i:hover{
+            color: rgb(246, 248, 246);
+            background: rgb(4, 158, 22);
+        }
+        .form-1 > input[type="submit"]{
+            padding: 5px;
+            margin: auto;
+            border-radius: 20px;
+            color: rgb(18, 91, 1);
+            width: 40%;
+            font-size: 16px;
+            font-weight: bold;
+            transition-duration: .5s;
+        }
+        .form-1 input[type="submit"]:hover{
+            background-color: green;
+            color: white;
+            border: 1px solid goldenrod;
+        }
+        .icon{
+                font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-smoothing: antialiased;
+}
+p{
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(47, 1, 107);
+    font-style: italic;
+    text-decoration: underline;
+}
+    </style>
 </head>
 <body>
-    <p>Firt example program of Git </p>
+    <p style="text-align: center;">Contact Form</p>
+    <div class="form-field">
+        <form action="action.html">
+            <div class="form-1">
+             <i class="icon">person</i>   
+             <input type="text" name="name" required placeholder="Name">
+            </div>
+
+            <div class="form-1">
+                <i class="icon">email</i>
+                <input type="email" name="email" required placeholder="Email">
+            </div>
+
+            <div class="form-1">
+                <i class="icon textarea-icon">message</i>
+                <textarea name="message" required placeholder="Enter message here..."></textarea>
+            </div>
+
+            <div class="form-1">
+               <input type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
 </body>
 </html>
