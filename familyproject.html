@@ -1,0 +1,311 @@
+<!--Coding By Shubham Vemra, Date=03-03-2022-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Family Project</title>
+    <!--<link rel="stylesheet" href="Projectfamily.css">*/-->
+    <style type="text/css">
+        
+      /*Coding by Shubham Vemra*/
+      * {box-sizing: border-box;}
+        /*-----Shubham----------Navigation Styling-----Verma----*/
+     html, body {
+        margin: 0;
+        padding: 0;
+        background-color: rgb(0, 139, 226);}
+
+       /* Main body contaner style*/
+      body, main{display: flex;
+         min-height: vh;
+         padding-top: 5px;
+         flex-direction: column;}
+      /* Main body contaner style*/
+
+         @keyframes myAnimation{
+         form{font-size: 5px;}
+         to{font-size: 20px;}
+         }
+         .head{animation-name: myAnimation;
+          animation-duration: 2s;
+         animation-fill-mode: forwards;
+         text-align: center;
+         animation-iteration-count: 1;}
+
+     .nav-bar {
+        position: fixed;
+        top: 0px; 
+        left: 0px; 
+        width: 100%;}
+
+ /* Light Box image style start*/
+ img{width: 100%;
+    height: auto;}
+.lightbox{
+    display: table;
+    position: fixed;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(0, 139, 226);
+    transition-duration: 2s;}
+.button-1, .button-2{
+    color: yellow;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: cursive;
+    text-decoration: none;
+   padding: 7px;
+   border-radius: 20px;
+   display:block;
+   text-align: center;
+   box-shadow: 5px 5px 2px 1px rgb(0, 7, 134);} 
+   .button-1{background: linear-gradient(to right, red, blue);} 
+   .button-2{background: linear-gradient(to right,  blue, green);} 
+   .lightbox:target{ top: 80px;} 
+.lightbox-cont{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;}
+.close{position: absolute;
+    top: 20px;
+    right: 15px;
+    font-size: 20px;
+    font-weight: 300;
+    text-decoration: none;
+    color: rgb(235, 255, 57);
+   border: 2px solid rgb(245, 245, 245);
+  border-radius: 10px;
+  padding: 2px;} 
+  .close:hover{border: 2px green solid;
+  color: red;} 
+ /* Light Box image style ends*/
+
+ /* Gallary style start*/
+        img{width: 100%;
+         height: auto;}    
+        .image-c{margin: 0 auto;
+        width: 95%;
+        box-shadow: 0 15px 30px black, 0 11px 8px blue;
+        margin-bottom: 20px;
+        background: lightblue;
+        transition-duration: 1s;}
+        .image-c:hover{
+            width: 80%;
+            box-shadow: 0 18px 30px green,0 14px 11px black;
+        }
+        .gallery{ margin: 20px;}
+        .image-d{
+            padding-bottom: 5px;
+            text-align: center;
+            margin-top: 0%;
+            }
+        h2{text-align: center;
+        color: darkgreen;
+        text-shadow: 2px 1px 3px red;}
+ /*Gallery style ends*/
+
+   .head{text-align: center;
+        line-height: 7px;
+        margin-bottom: 5px;
+        height: 55px;
+        border: 3px solid rgb(3, 57, 145);
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        margin-top: -20px;
+        background:linear-gradient(to right, rgb(84, 1, 1), rgb(10, 1, 87));
+        font-family:cursive;
+        text-shadow: 2px 3px 2px rgb(249, 44, 44);
+        color: rgb(214, 218, 0);
+        font-weight: bold;}    
+   .head:hover{color:rgb(0, 255, 0);
+        text-shadow:2px 3px 2px yellow ;
+        cursor: pointer;
+        }  
+   .navigation a {
+        text-decoration: none;
+        color: darkblue;
+        display: block;
+        height: 30px; 
+        border: 1px solid black;
+        line-height: 30px; 
+        border-radius: 10px;
+        font-weight: bold;
+        font-family: cursive;
+     }
+     .navigation > ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+     }
+     
+     .navigation > ul > li > a {
+        background: lightblue
+     }
+     .navigation > ul > li > a:hover {
+        background: #173459;
+        color: #f8f9f9;
+     }
+     .navigation li:last-child {
+        border: none;}
+        footer{position: relative;}
+     .navigation li {
+        float: left;
+        width: 25%;
+        text-align: center;
+        border-right: 0px solid #333; 
+     }
+     /*...................Style of Content.......................*/
+     .content > div {padding: 5px;} 
+     .content{line-height: 20px;}
+
+    /*Designing of content diviosion, By: Shubham*/
+   
+   #home{width: 100%;
+         height: 100%;
+         background: scroll ;
+         text-align: center;}
+
+   #article1{color: yellow;
+      background:rgb(3, 92, 143);
+      font-family: cursive;
+      cursor: pointer;}     
+   #gallary1{color: yellow;
+      background:rgb(3, 92, 143);
+      font-family: cursive;
+      cursor: pointer;}
+   #about1{color: yellow;
+      background:rgb(3, 92, 143);
+      font-family: cursive;
+      cursor: pointer;}  
+
+   /*Footer Section Designing, By: Shubham*/
+   footer{background: rgb(1, 29, 96);
+      position: relative;
+      padding: 20px;
+      margin-top: 10px;
+      color:white;
+      text-align: center;
+      line-height: 18px;}
+
+  #logo{color: red;
+        text-decoration: underline;
+        font-family: cursive;
+       font-weight: bold;
+       text-shadow: 1px 3px 10px rgb(0, 44, 98);}  
+
+  .f-copyright{width: 100%;
+      height: flex;
+      padding: 10px;
+      background: rgb(22, 18, 18);
+      position: absolute;
+      bottom: 0px;
+      left: 0px;} 
+
+  .f-body{margin-bottom: 40px;
+      padding: 10px;} 
+
+  .f-body> div:first-child{font-size: 120%;} 
+  .f-body ul{list-style-type: none;
+      margin: 0;
+      padding: 0;
+      text-align: center;}
+
+  .f-body li> a{color: white;
+  text-decoration: none;}  
+
+  p{margin-top:10px;}
+  .f-body li> a:hover{color: rgb(0, 153, 158);
+   font-size: 20px;} 
+
+   .company{ text-decoration: none;
+    color: aqua;
+    font-family:monospace;
+   font-size: 12px;
+   font-weight: bold;}
+    </style>
+
+<!--Header Section is Start-->    
+</head>
+<body>
+   <header>
+   <div class="navigation">
+ <div class="head"><h3>Verma Family</h3></div>
+      <ul>
+         <li><a href="#" class="active"> Home </a></li>
+         <li><a href="#"> About</a></li>
+         <li><a href="#"> Article </a></li>
+         <li><a href="#"> Gallery </a></li>
+      </ul>
+   </div></header>
+   <!--Main Section is Start-->
+   <main>
+   <div class="content">
+      <div id="home">
+
+         <!--Popup Image start-->
+         <a class="button-1" href="#example">Click to show image of full "Verma Family"</a>
+         <div class="lightbox" id="example">
+                 <a href="#" class="close">CLOSE</a>
+                 <div class="lightbox-cont">
+                     <img src="webimage5.jpg">
+                 </div>
+                 </div>  <br>
+         
+      <a class="button-2" href="#example">Click to show image of "Shubham Verma" Family</a>
+         <div class="lightbox" id="example">
+                  <a href="#" class="close">CLOSE</a>
+                  <div class="lightbox-cont">
+                  <img src="webimage5.jpg">
+                  </div> 
+                  </div>
+         <!--Popup Image Ends-->
+
+   <!--Gallery Start--> 
+   <div class="gallery">
+      <div class="image-c">
+          <img src="web image3.jpg">
+          <p class="image-d">Greenland</p>
+      </div> 
+      <div class="image-c">
+          <img src="web image8.jpg">
+          <p class="image-d">Sunrising</p>
+      </div>
+      <div class="image-c">
+          <img src="webimage5.jpg">
+          <p class="image-d">Beach</p>
+      </div>
+      <div class="image-c">
+          <img src="webimage6.jpg">
+          <p class="image-d">Love</p>
+      </div>
+      <div class="image-c">
+          <img src="webimg12.jpg">
+          <p class="image-d"> Beauty Scene</p>
+      </div>
+  </div>
+   <!--Gallery Ends-->            
+   </main>
+<!--Main Section End-->
+
+   <!--Footer Section is Start-->
+   <footer>
+      <div class="f-body">
+         <div id="logo"><!--Remenber Logo is here - Shubham Verma-->
+           Verma Family</div>
+         <div><p>"Duko Verma Family" is source of detail of Verma Family of Duko. </p>
+          <ul>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Contect Us</a></li>
+              <li><a href="#">Terms and Conditions</a></li>
+          </ul>   
+         </div>
+         <div class="f-copyright">© 2022 "Verma Family" all right reserved. <br> Powered by 
+            <a class="company" href="https:www.studymuch.in">StudyMuch Learning Group.</a> </div>
+   </footer>
+</body>
+</html>
